@@ -1,3 +1,4 @@
+
 /*Exercise 4 - Functions
 
 Write a program to calculate the function called nCr which is defined as
@@ -26,35 +27,46 @@ int main() {
   std::cout << nCr(n,r);
   std::cout << std::endl;
   return 0;
+  }
 
 long nCr(int n, int r)
 {
+
+  return  (Factorial(n)/Factorial(r)*Factorial(n-r));
   
 }
 
 long Factorial(int no)
 {
-  fac = 1;
-    for (int r=no; r >= 1; r--) {
-        fac = fac * r;  
+  int fac = 1;
+  int x;
+    for (int x=no; x >= 1; x--) 
+	{
+        return ( fac * x);
+    }
 }
 
 
 
-
-
-
-
-
-
+/*
+long nCr(int n, int r)
 {
-  int fac1 = 1;
-  int fac2 = 1;
-    for (int x=r; x >= 1; x--) {
-        fac1 = fac1 * x;  
-      }
-    for (int x=n; x >= 1; x--) {
-        fac2 = fac2 * x;
-      }
-  return fac2/ fac1;
+  nCr = Fractional(n)/Fractional(r)*Fractional(n-r);
+  return nCr;
 }
+
+long Factorial(int no)
+{
+  int fac = 1;
+    for (int r=no; r >= 1; r--) {
+        fac = fac * r;
+      return fac;
+      }
+
+*/
+
+
+
+
+
+
